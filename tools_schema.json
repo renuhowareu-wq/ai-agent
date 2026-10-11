@@ -1,0 +1,91 @@
+[
+  {
+    "name": "calculator",
+    "description": "Evaluate a math expression, e.g. '(12*7)/3'.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "type": "string",
+          "description": "Math expression"
+        }
+      },
+      "required": [
+        "expression"
+      ]
+    }
+  },
+  {
+    "name": "get_weather",
+    "description": "Get current weather for a city.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "City name"
+        }
+      },
+      "required": [
+        "city"
+      ]
+    }
+  },
+  {
+    "name": "web_search",
+    "description": "Search the web for up-to-date information.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "write_file",
+    "description": "Save text to a file in the workspace folder.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "File name, e.g. notes.txt"
+        },
+        "content": {
+          "type": "string",
+          "description": "Text to write"
+        }
+      },
+      "required": [
+        "filename",
+        "content"
+      ]
+    }
+  },
+  {
+    "name": "read_file",
+    "description": "Read a text file from the workspace folder.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "File name"
+        }
+      },
+      "required": [
+        "filename"
+      ]
+    }
+  },
+  {
+    "name": "get_datetime",
+    "description": "Get the current date and time."
+  }
+]
